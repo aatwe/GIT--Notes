@@ -1,0 +1,21 @@
+Clone remote repo 
+pull from remote repo into working directory
+
+
+Github -> Open source IOS Apps  //to learn	
+
+How to download open source project?
+
+1) Open project
+2) Clone/Download button
+3) Copy HTTPS URL
+4) git clone "url"	//paste your url
+ 		//Where is it cloned? working directory
+		//See project files
+
+
+How to see what others made changes to project?
+git log
+//commit messages
+
+

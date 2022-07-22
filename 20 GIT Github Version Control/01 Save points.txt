@@ -1,0 +1,16 @@
+stage 1 xxxxxxxxxxxxx
+	xxxxxxxxxxx
+	//Make  savepoint
+
+
+stage 2 xxxxxxxxxxxxx
+	xxxxxxxxxxx
+	//Make another savepoint
+
+stage 3 xxxxxxxxxxxxx
+	xxxxxxxxxxx
+	//Errorprone
+
+How to roll back to last save point? using git
+	Compare current code file against previous version code file
+	//

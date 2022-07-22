@@ -1,0 +1,79 @@
+cd Desktop
+mkdir Story
+cd Story		//Working directory
+ls
+touch chapter1.txt	
+open chapter.txt
+vim chapter1.txt
+
+git init	//initializes empty git repository inside story directory
+		i.e	/Users/angelayu/Desktop/Story/.git/
+	//Why cant see .git? hidden
+	How to see?
+ls -a
+	see .git as hidden file
+	//what .git does? tracks all changes, commit changes, perform version control
+
+	//How to start tracking changes for files like chapter1.txt?
+		Add file to staging area
+	//What is staging area? intermediate place
+				Can choose which files from working directory -> commit
+	
+	
+
+	//How to check what is inside a staging area
+	git status
+
+	//Red files = untracked / not in staging area / not ready to commit
+	   Green files = tracked / in staging area / ready to commit	
+
+	//How to add files to staging area?
+	git add chapter1.txt
+
+	//Check file status
+	git status
+	Chapter1.txt is now green	
+	Green files = in staging area , ready to be committed
+	
+
+	//How to commit files?
+	git commit -m "Initial Commit"		//commit message = what changes you made
+						//commit message = in present tense // what is done now
+
+
+	//How to check your commits?
+	git log
+                Time Person
+	commit hash 	// to identify a commit
+	commit message
+
+______________________________________________________________
+1) Create     	chapter2.txt
+ 		chapter3.txt
+
+touch chapter2.txt
+	It was the best of times, it was the worst of times
+touch chapter3.txt
+	It was the spring of hope, it was the winter of despair
+open chapter3.txt
+	It was the spring of hope.It was the winter of despair
+
+2) Add chapter 2 and 3 to staging area
+
+	git status	//check status
+		chapter2.txt	//red
+		chapter3.txt	//red
+
+	git add  .	//specify everything in current directory
+
+	git status //
+		chapter2.txt	//green
+		chapter3.txt	//green
+
+3) Commit the files
+	git commit -m "complete chapter 2 and 3"
+
+	git log
+	//check 
+	commit1 	hash1  time1	HEAD -> Master	//current position/state
+	commit2  hash2 time2

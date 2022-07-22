@@ -1,0 +1,102 @@
+A large project has multiple branches.
+
+version 1----------version 2-------version 3---------------version 4	//master branch
+            		          \				./
+	  	             ----------version 3-------version 4	//feature branch
+
+how to create a side branch (new) for features?
+
+
+
+How to merge side branch back into main
+
+_____________________________________________________
+
+we have 3 chapters
+
+1) Add new branch
+	git branch alien-plot
+	
+2) Check branches
+	git branch
+		alien-plot
+		*master
+
+3) Switch branch(master -> alien)
+	git checkout alien-plot
+
+4) Make changes in chapter 1 and 2
+5) Commit changes
+	git add .	
+	git commit -m "modify chapter 1 and 2 to have alien theme"
+6) git log]
+	2 commits in master branch
+	1 commit in alien-plot branch
+
+7) Check which branch you are at
+	git branch
+		*alien-plot
+		master
+
+8) Go back to master branch
+	git checkout master
+
+
+9) Check files again
+	chapter2 and chapter3 will be unchanged
+
+10) Create new file in master branch
+	touch chapter4.txt
+	open chapter4.txt	//add something in this file
+
+11) Commit your changes
+	git add .
+	git commit -m "add chapter 4"
+
+12) git log
+	//here latest commit will be for chapter4
+13) switch to alient-plot
+	git checkout alien-plot
+	git log
+	//here latest commit was modify chapter 1 and 2 to have alien theme
+
+_______________________________________________________________________________________________
+MERGE CHANGES
+14)  Experimented on feature branch 
+        how to merge changes from feature back into master branch
+
+
+1) Go to master branch
+   Git checkout
+
+2) Merge changes from alien-plot
+  git merge alien-plot
+
+3) Vim opens	//add any comments
+  :q!		//save and quit
+
+4) Changes absorbed from alien-plot
+	//Will alien-plot exist? yes
+
+5) Check if merged 
+	git log	
+	Merge branch 'alien-plot'	//most recent commit
+
+6) Push (upload) changes from master branch to remote repo 
+    git push origin master -u	
+
+7) Check github
+	Story repo-> commits
+		Merge branch  'alien-plot'
+		add chapter 4
+		modify chapter 1 and 2 to have alien name
+
+   Check graphical representation
+	Insights -> graphs -> network
+
+		*---*-----*--*
+		       \	  /
+		        *-----	//hover dots 	//below dot shows: modify chapter1 and 2 to have alien theme
+
+
+Who can merge? only with write access

@@ -1,0 +1,25 @@
+Originally
+It wasthe spring of hope. It was the winter of despair
+accidently typed jargon in chapter3.txt
+aasdfa afasdfad asdfasdf adfasdf
+
+
+Reveert local changes in working directory
+How to revert?
+
+1) Check if modifications are there?
+	git status
+	chapter3.txt	//red//modifications not in staging/commited 
+
+2) What differences bw
+	chapter3 	current version
+	chapter3 last save point
+
+	How to find difference?
+	git diff chapter3.txt
+		It wasthe spring of hope. It was the winter of despair 	//Text in red //modified
+		aasdfa afasdfad asdfasdf adfasdf			//Text in green
+
+	How to roll back to the previous correct version
+		git checkout chapter3.txt			//roll back to last version(last checkpoint) created in local repository
+		//check text file chapter 3 is restored

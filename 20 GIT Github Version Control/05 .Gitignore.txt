@@ -1,0 +1,77 @@
+How to set rules committing some files to remote and local  Git repo
+
+Gitignore : has files that we should ignorewhen we commit our project to Git
+
+1) cd Desktop
+    mkdir Project
+    touch file1.txt
+    touch file2.txt
+    touch file3.txt
+    touch secrets.txt	//has stuff we dont want to post online
+		//bad instances off amazon project aws api key pushed t github   -> put passwords in gitignore file
+		//also utility files: user preferences, local settings	
+			Dont want person to download and copy in their project folder (While cloning/forking)
+			DS_Store files store settings:  how icons arranged in folder etc
+
+				How to find ds_store
+				ls -a 
+				-> DS_Store  -> not useful to anyone else
+
+2)Create gitignore file
+	  touch .gitignore
+
+3) 
+	  open.gitignore
+		
+4) Initialize empty git repo in project directory	
+	 git init
+	
+5) Add files currently in directory to staging area
+	git add  .		//all files added to staging area  including secrets.txt & DS_Store
+
+6) Remove all files from staging area
+	git rm --cached -r .
+7) Check
+	git status //all red
+
+8) open .gitignore	//have to be new line, comment with # , *.txt ignore all files with txt extension 
+ 	.DS_Store	
+	Secrets.txt
+
+9) Add files to staging area
+	git add
+	
+10) Check
+	git status
+		//DS_Store and secrets.txt are ignored
+
+11)  clear
+
+_______________________________________________________________________________________________________________
+
+Add Gitignore file to XCode
+
+XCode -> Drag image view on Controller
+
+cd Desktop/Test
+touch .gitignore
+open .gitignore
+
+Useful github templates
+github.com/github//ignore	//Useful git ignore templates
+	swift.gitignore file
+What does this template contain? 
+		files that we dont want to upload to github or any other remote repository
+			user defaults, user settingspx user etc
+Paste all into your own .gitignore file
+
+Add
+.DS_Store	
+Secrets.txt
+along with others
+________________________
+Test
+git init
+git add .
+git status
+git commit -m "initial commit"

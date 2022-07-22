@@ -1,0 +1,50 @@
+where is remote repository hosted? somebody else's server/computer
+ 
+
+
+1) Create new repo
+	+ -> Repositroy name -> Description -> 
+		Public : everything we commit to remote repo/Github anyone can see
+		Private  : needs subscription on github
+	-> Create Repository
+
+
+2) How many ways to setup repository?
+
+	1) Github for desktop
+	2) HTTPS/SSH
+	3) Create repo on CLI
+		 CLI Push existing local repo -> remote repo
+			a) copy https address
+				echo "# Story" >> README.md
+				git init
+				git add README.md
+				git commit -m "first commit"
+				git remote add origin https://github.com/angelabauer/Story.git
+				git push -u origin master
+
+		Ex we have 2 previous commits	//check by git log
+		How to push these commits to github
+
+		1)    Create remote repository
+		       git remote add origin https://github.com/angelabauer/Story.git
+						//origin = name of remote, can be any name
+						//URL of remote repo on Github
+		2)   Push changes from local to remote repository (-u links) (push to branch master)(master = default/main branch)
+		      git push -u origin master		//uploading local repository to remote repositroy
+
+						//Master branch = timeline of commits
+
+		3) Refresh Github : Files are hosted on Github, check commit messages
+			Insights -> Graphs -> Network
+				Master branch with only 2 statements/commits
+				On this branch see chekpoints
+
+
+Now we have 4 repo
+
+Wokring directory	Staging area	Local repo	Remote Repo
+				.git		Github
+Can local and repo run in parallel? Yes
+how to sync them?	
+Both local and remote have master branch

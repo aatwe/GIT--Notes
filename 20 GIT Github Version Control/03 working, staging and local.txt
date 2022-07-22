@@ -1,0 +1,8 @@
+Working ----> Staging area ----> Local repo --------> Remote repo
+Working Directory = where we initialize Git repository	//git init  in story directory
+
+Staging area  =  Why staging area? dont want all files to be tracked/commit
+			can filter what to ignore what to track
+
+Local repository	.git
+		

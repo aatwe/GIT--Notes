@@ -1,0 +1,109 @@
+what learnt
+implement source control by 
+	1)Local: CLI
+	2) Local: Xcode
+	3) Remote: Github 
+
+
+How to collab using remote repo?How to contribute to open source projects?
+
+				*		*
+1) Working		Staging		Local		Remote
+
+
+2) Copy of remote != clone
+	clone = copy enire repo and clone to local envt\
+	Forking= Copy = copy a repo ,
+		keep on own github, own the copy 
+
+Local		Remote		Copy		Remote
+			        of remote
+
+
+
+
+
+P1	 	P1		P2		P2
+
+
+Team = everyone in team has both read and write permissions on single remote repo
+	Everyone can git clone and work local
+	Push changes
+	Resolve conflicts
+
+What if you dont have read and write access? make pull request
+Pull request =suggestion(write access guy has to pull)
+fork = make a copy
+How to do open source collab?
+	Fork + Pull request
+
+	1) Bangela forks Angela repo , own a copy
+	2) Clone repo to work local repo , improve code, addfeature etc
+	3) Bangela Commit change to remote repo
+	4) How can bangela ask angela to sync changes?	
+		Bangela makes pull request to angela
+	5) Angela approve pull request
+	6) merge bangela repo with angela repo
+	7) Check commit reflected
+
+
+
+Implement
+	
+1) Login different account
+
+2) Open angela repo
+
+3) Fork repo //own your copy of angela
+
+4) yourusername/Story
+
+5) there are 4 chapters,
+	make some changes in chapter4
+	//What are these suggested improvement?
+6) User Commit the changes to master branch of forked  self  copy
+7) Angela perspective
+Insights -> Network
+	*---*-----*--*
+angela	      \	  /   \
+	       *------       \
+username	           --*
+
+Insights -> members //who have forked angela repo
+
+Angela can see contributers to her pre existing repo
+
+8) User account
+	Code -> new Pull request
+	COmparing changes
+		See difference in changes
+			Click Create Pull Request(Green)
+			Add comment why your features deserve to be merged
+			no conflicts with base branch
+If (write access) -> Pull request will be merged
+	unless head branch conflict with base branch
+________________________________________________________________________________________________
+
+Review Pull request
+
+AngelaBauer -> Pull request
+	-> 1 open
+		Click and see comments + user commit messages
+		Compare differences in his commit and main branch
+
+	Review the changes
+		a) Comment
+		b) Give explicit approval
+		c) Request Changes before merging
+
+ClickMerge Pull Request
+
+Commit is added to master branch
+
+Check
+
+Insights -> Network
+	*---*-----*--*------* (user name)
+angela	      \	  /   \___/
+	       *------       
+	          

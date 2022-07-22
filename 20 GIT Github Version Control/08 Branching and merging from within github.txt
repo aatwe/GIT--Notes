@@ -1,0 +1,63 @@
+1) Create new repo
+	Story2
+
+2)  Leave repo as public
+
+3) Initialize with a README	//documentation
+	Create chapter1
+		//commit directly to master branch
+	
+
+4) Check if you are on master branch from drop down
+	create new branch experimental
+	everything gets copied from master to experimental branch
+
+	Edit chapter1,txt
+	This is a great story
+
+	Commit changes
+		Update chapter 1 to be more upbeat
+'		//commit directly to experimental branch
+	
+
+5) Switch to master
+	Change not observed
+
+
+Go to repo => notification ->  compare master and experimental 
+		Compare and Pull request	
+		//Why showing? Changes not reflected in master
+		How to pull them to master?
+	
+Create new file: Chapter2.txt in story2
+	This  is an even better chapter
+	Create Chapter 2
+	Commit new file
+
+
+Insights -> Graphs -> Network
+
+*---*------*---*
+      |
+      -> *
+_________________________________________________________
+How to pull from experimental to master branch?
+
+1) Go in pulling place:  master branch
+
+2) new pull request
+
+3)Compare changes page-> Base: master  Compare : experimental 
+	Find differences below in chapter1.txt
+
+4) Create pull request
+
+5) merge experimental branch
+	Confirm
+
+
+Insights -> Graphs -> Network
+
+*---*------*---*
+      |  	   /
+      -> *----
