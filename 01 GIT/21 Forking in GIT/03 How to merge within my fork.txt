@@ -1,0 +1,24 @@
+Create pull request
+Select base : master
+
+compare : dev
+
+Create pullrequest
+add a message
+add default text to PR info
+	
+merge pull request
+
+
+check code again
+dev and master both show hi there
+
+//note after merging branch into default branches like master
+always clean up the  branch that has just been merged
+i.e delete it from github / local machine etc
+
+but in branches like dev staging and master
+ in big projects dev never gets deleted , master nevergets deleted
+
+having your own fork allows full access and control of CRUD operations
+pull fork make updates , test, push back to fork and create PR against original repo

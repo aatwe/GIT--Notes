@@ -1,0 +1,9 @@
+moves a branch from, one commit to another
+
+
+if you want to rebase from remote master instead of local
+
+git fetch origin
+git rebase origin/master
+or
+git pull --rebase origin master

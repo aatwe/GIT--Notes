@@ -1,0 +1,23 @@
+Function: Transfers commits local repository -> Remote repository
+
+git push -u origin tobby
+//pushes tobby from local repo to remote branch
+tobby branch on local+remote are syncd
+
+	git push <remote><branch>
+		//origin  //tobby
+		//push the specified branch with all the commits
+
+	
+	git push -u <remote><branch>
+	//-u flag sets association between branch and remote branch explicitly
+	//dont need it once we've done it
+
+
+	git push -f<remote><branch>
+	//-f forces the push even if it results in a non fast forward merge
+	  just ignore + push!
+
+ 
+	git push --all <remote>
+	//push all of yoour local branches

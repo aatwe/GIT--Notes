@@ -1,0 +1,50 @@
+demo repo2 folder
+//this folder is not git repository yet , earlier we pushed local file that was in repository
+this is new repo
+
+
+//How to check if it is git repository? la //check hidden folder
+
+for ex
+add README.md and some text in local repo
+
+//Convert local repo to git repo
+git init
+//check path of initialized repo
+
+//Check
+git status
+	README.md //Untracked
+
+//Track the untracked file
+git add README.md
+git status
+
+//file read to commit
+
+git commit -m "Created README" -m "description "
+
+//How to push it live?
+ git push origin master
+//fatal error origin is not git repo  
+why? we didnt clone this from git repo
+	git doesnt know where to push it since it is not connected
+
+How to create conenction for new local repo to git? How to add origin?
+
+1) Create empty git repo on github.com
+	demo-repo2
+	
+2) Copy the  SSH key generated git@github.com....
+	  
+terminal:
+	git remote add origin git@github.com....
+	git remote -v	//shows remote repo connected
+//origin is now setup//connection to push is done
+
+git push origin master 
+//to make it default can also use
+	git push -u origin master //in future will default origin master
+
+Check
+Refresh github -> page gets added 

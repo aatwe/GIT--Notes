@@ -1,0 +1,16 @@
+git push origin master
+		
+//origin = location of git repository
+//master  = branch to push to
+
+Enter
+
+Check github -> refresh
+code changes are live
+
+
+Check commits
+2 online commit
+1 local commit and pushed
+
+same file changes green red

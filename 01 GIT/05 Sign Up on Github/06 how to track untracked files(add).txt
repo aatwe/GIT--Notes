@@ -1,0 +1,15 @@
+track all files
+git add .
+   //period means track all files listed here(untracked + modified)
+
+track particular file
+git add index.html
+
+
+check if files successfully tracked
+git status
+
+modified:
+new file:
+
+//Changes are successfully tracked. Changes ready to commited

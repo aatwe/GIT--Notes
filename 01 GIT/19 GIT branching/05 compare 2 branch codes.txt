@@ -1,0 +1,4 @@
+demo-repo git:(master) git diff feature-readme-instructions 
+
+text in white = unchanged text
+text in red   =  changes not currently in master but in feautre branch

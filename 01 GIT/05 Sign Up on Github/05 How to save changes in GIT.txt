@@ -1,0 +1,8 @@
+Make changes in README.md in local machine
+
+
+Terminal
+git status
+	//Shows files that are modified
+	//shows untracked files (new file if created)
+

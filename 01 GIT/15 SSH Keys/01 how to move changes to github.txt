@@ -1,0 +1,58 @@
+commit just moved changes to snapshot and save on gti
+To push changes to github we need to connect local machine using ssh key
+How to connect local machine to github account (trust by giving one key)
+SSH Keys
+
+
+
+How to generate local SSH key?
+	 type of encryption
+		strength of encryption
+			email address for github	
+ssh-keygen -t rsa -b 4096 -c "abc@gmail.com"
+
+//Enter file to save the key in
+	default: userdirectory/.ssh/id_rsa
+
+//Enter passphrase for key:
+	//can leave blank
+
+//Key successfully generated
+
+//Search for the key in directory by using ls
+
+2 keys;
+testkey		//private key	//keep secure onlocal machine
+testkey.pub	//The key that we upload to github interface
+		//public key
+
+ we upload public key on github
+whenever we want rto connect to github/push code to github/use account
+	//private key will verify you are generator of public key
+
+How to print out public key?
+cat testkey.pub
+//key will start with ssh-rsa end with email
+Copy the entire public key
+	//just highlighting will copy the text, no ned for ctrl + c
+	//another way to copy = pbcopy <~/testkey.pub>
+
+Go to github -> Settings -> SSH and GPG Keys
+ -> New SSH key 
+     a) title
+     b) paste public key
+
+Add SSH Key
+Confirm Password 
+Key is successfully added (trust connection made)
+
+
+make sure local CLi knows about the key we generated?
+//this will set p key to be working with GIT //General way for OS
+How?
+//Check ssh key image
+$ eval "$(ssh-agent -s)"
+ > Agent pid 59566
+//public KEY IS SUCCESSGFULLY uploaded to github
+__________________________________________________________________________________
+

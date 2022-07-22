@@ -1,0 +1,13 @@
+Create a new pull request
+
+Select base : vue js repo	//repo where i forked from
+	branch dev	//branch of forked repo
+	
+compare to
+	
+	your repo	//your repo that your forked
+	your branch	//branch of forked repo
+
+Click Create pull request
+
+We wont create pull request because this is vue js :P

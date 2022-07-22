@@ -1,0 +1,12 @@
+for ex.
+
+demo-repo git:(quick-test) x git log
+
+
+copy hash cec9ae....
+
+demo-repo git:(quick-test) x git reset --hard cec9ae
+
+/?ALL CHANGES AFTER commit cec9ae.... are UNSTAGED + REMOVED
+HEAD will now point to cec9aeb
+//FILE will be totally updated

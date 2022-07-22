@@ -1,0 +1,2 @@
+function: incorporates changes into the current branch
+//having 2 parents -> 1 resulting child

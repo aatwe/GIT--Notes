@@ -1,0 +1,13 @@
+1) install GIT
+
+Check
+CMD- > git --version
+	//for windows choose GITBash over command prompt
+	
+2) VS Code editor
+	Open your local machine folder
+	Create a local clone 
+	Open GIThub Repo -> Clone/download -> clone with SSH -> Copy link : git@github.com.......
+
+		//paste in terminal with command
+	git clone git@github.com....

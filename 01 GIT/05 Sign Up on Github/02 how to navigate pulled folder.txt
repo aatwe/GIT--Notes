@@ -1,0 +1,10 @@
+//on gitbash
+//changes into folder 
+what is a git folder? has a hidden folder present :  .git
+	Stores all changes recorded inn history of  repository
+
+git cd demo
+
+
+//we go into demo repo folder: (repository name)
+demo-repo git:(master)

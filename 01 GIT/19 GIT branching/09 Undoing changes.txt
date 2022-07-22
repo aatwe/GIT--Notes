@@ -1,0 +1,47 @@
+what if we by mistake commit/add to git
+
+How to undo add?
+
+1) add line in readme.md
+	//have fun line12
+
+2) demo-repo git:(quick-test) git status
+	changes not staged for commit
+		//modified README.md
+
+3) demo-repo git:(quick-test) x git add README.md
+
+4) demo-repo git:(quick-test) x git status
+	changes to committed	//Staged
+		//modified README.md
+
+	how to undo these staging ?
+5) demo-repo git:(quick-test) x git reset README.md
+		or
+			    git reset
+	//gives list of files unstaged after reset
+
+6)  demo-repo git:(quick-test) git status 
+	//File no longer staged
+______________________________________________________________________
+How to undo commit?
+
+1) demo-repo git:(quick-test) x git add README.md
+
+2) demo-repo git:(quick-test) x git commit -m "added install step"
+	 
+3) demo-repo git:(quick-test) git status 
+	//nothing to commit because all changes have now been commited
+
+//What if we made mistake on commit?
+4) demo-repo git:(quick-test) git reset HEAD~1
+		//HEAD gives pointer to last commit : which was git commit -m "added install step"
+		//HEAD~1 = one commit before i.e will undo the above commit
+
+5) demo-repo git:(quick-test) git status
+		//Last changes were unstaged and uncommitted
+		//our last changes were unstaged and uncommitted
+
+How to check?
+6) deom-repo git:(quick-test) x git diff
+	have fun git picks it up as new change 	

@@ -1,0 +1,1 @@
+Your project = all your files and folders  = where your project is kept = Repository

@@ -1,0 +1,20 @@
+Create in online editor
+Green button / + Sign -> Create new repository
+
+Description
+visibility
+Create new repo
+Create new file
+Commit new file on github itself index.html
+ //will have a placeholder text if you dont specity
+
+Open file -> Edit
+Make changes
+Commit changes on github itself //placeholder changesd to Update README.md
+
+
+How to see history on github of changes/commits ?
+Commits tab near code tab
+Green(+) = lines added to files
+Red(-)     =  Line was deleted
+

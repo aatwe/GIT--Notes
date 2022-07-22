@@ -1,0 +1,9 @@
+Management for changes to documents,
+	             changes to computer programs
+	             large websites changes
+	and oher indo
+
+	Version control : Save time points of work
+
+	roll back any time in past
+	Create experimental branches

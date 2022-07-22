@@ -1,0 +1,5 @@
+CLI
+Another way to run programs instead via GUI
+Interface for text commands to navigate folders, create files, install run programs etc
+we will use to make git commands
+why use termianl over software like Github : practice

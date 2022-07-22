@@ -1,0 +1,16 @@
+modify file
+vscode shows M against files  that are modified since last checking into git
+
+//in your feature branch only
+git status
+
+//shows readme.md is modified
+
+
+how to save to git  on feature branch
+demo-repo git:(feature-readme-instructions) git add README.md
+demo-repo git:(feature-readme-instructions) git commit -m "updated readme"
+
+//Try checking on master branch
+demo-repo git:(feature-readme-instructions) git checkout master
+//you wont find changes here on this branch code in vscode

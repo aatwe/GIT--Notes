@@ -1,0 +1,23 @@
+master = default branch in repo
+code lives on a branch
+
+create new branch : feature
+
+initially code on master branch = feature branch
+
+but changes commited to feature branch -> not visible on master
+
+each branch tracks itself only
+
+
+why branching? to create new features that are not master ready yet
+		we get a sandbox area beofre merging main branch
+
+For ex
+bug in commit#4 in main branch
+
+How to bug fix?
+ create hotfix branch after commit# 4 in main
+ make change to fix bug
+ merge into master branch
+

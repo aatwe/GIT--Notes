@@ -1,0 +1,2 @@
+Takes  everything from staging area  -> into GIT (snapshot)
+Save files into GIT

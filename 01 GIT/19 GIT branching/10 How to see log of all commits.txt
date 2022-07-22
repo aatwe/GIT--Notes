@@ -1,0 +1,20 @@
+10 What if many different commits
+when we have many different commits
+for undoing multiple commits or getting back to specific commit
+
+no quick pointer avail in GIT like HEAD to look at last commit
+
+
+But
+can see log of all commit
+demo-repo git:(quick-test) x git log
+
+//topmost is the latest
+	each commit has commit message
+	easy to track
+	each commit has a hash for ex15181e.....
+	scroll using spacebar	
+
+demo-repo git:(quick-test) x git reset 15181e.......
+//ANY CHANGES MADE TO FILE AFTER 1518e.... commit are now unstaged
+//changes will still be there but they are not with GIT any longer

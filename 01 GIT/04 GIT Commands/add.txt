@@ -1,0 +1,6 @@
+add changes from local machine to GIT staging area
+
+i.e 
+takes modified file from your working directory
+into 
+staging area

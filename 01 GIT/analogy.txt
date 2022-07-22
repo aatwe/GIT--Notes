@@ -1,0 +1,11 @@
+
+12) Test by making changes
+	1) Make changes
+		index.html -> success.html ->change h1 	//Save
+	2) Add changes to version control
+		 git add .
+	3) Commit current version , specify why
+		git commit -m "Changed success page h1"
+
+	4) Push changes, update website with changes
+		git push heroku master	

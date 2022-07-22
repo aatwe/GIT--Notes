@@ -1,0 +1,71 @@
+pull code into other branch
+
+for ex code from feature rbanch pull into master branch
+make PR from feature branch to master branch
+
+
+why make Pull request from one branch to other? so that anyone can review our code
+						comment
+						ask to make changes/update
+
+How to update the code after making pullrequest?
+Make additional commits in code and pushing up to github
+	given it is on same branch as of PR
+
+What after merging PR? delete feature/source branch switch back to master
+			thenif we want to make coding changes 
+			create another new branch
+			start process over
+				make commit 
+				make pr 
+				merge again
+____________________________________________________________________________________________________
+How to create pull request manually on github
+
+1) Manually on github
+when you push a new branch on github
+//it asks if you want to compare and create a pullrequest
+
+
+the compare branch is merged with the base branch
+Add title and description of pull request
+CREATE PULL REQUEST BUTTON
+
+check comments made on pull request
+check commits made 
+check files changed
+//can add comment at line of code as well
+useful when multiple people commenting on code
+//have to click resolve if not owner
+
+
+MERGE PULL REQUEST
+
+//our PR has merged successfully
+how to check?
+
+swtich to master branch
+demo-repo git: (feature-readme-instructions) git checkout
+
+checkcode //changes not present why? changes are on github
+	need to pull them down form master branch
+
+
+demo-repo git:(master) git pull origin master
+//succesfully pulled from master branch
+Check code agian
+local master also gets updated with changes from branch 
+
+
+
+//Now we delete the branch
+
+//Check list of branches
+demo-repo git:(master) git branch
+feature-readme-instructions
+*master
+
+demo-repo git:(master) git branch
+	//-d indicates deleting
+demo-repo git:(master) git branch -d feature-readme-instructions
+

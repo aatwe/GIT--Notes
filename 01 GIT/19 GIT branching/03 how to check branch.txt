@@ -1,0 +1,10 @@
+go into git repo folder
+demo-repo git:(master) git branch
+
+*master
+//Shows we have only1 branch
+//*  = currently on that branch
+//hit q and get out of this option
+
+
+

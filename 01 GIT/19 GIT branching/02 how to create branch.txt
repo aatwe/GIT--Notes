@@ -1,0 +1,28 @@
+//How to create branch? switch branch with -b
+
+demo-repo git:(master) git checkout -b feature-readme-instructions
+	//what is checkout? switches branch
+		           -b? indicates create new
+ 	
+
+//switched to new branch feature-readme-instructions
+After creating new branch
+//your branch name changes
+
+//Check branch listings
+demo-repo git:( feature-readme-instructions)  git branch
+*feature-readne-instructions
+master
+
+
+//Try switching between branches using checkout
+demo-repo git:(feature-readme-instructions) git checkout master
+//switched o branch 'master
+
+'
+demo-repo git:(master) git branch
+feature-readne-instructions
+*master
+
+//can use tab when long similar names
+just type keyword and hti tab

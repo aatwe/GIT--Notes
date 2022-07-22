@@ -1,0 +1,112 @@
+imagine
+master branch is getting updated from different branches
+
+
+2 people change the same file different and merge with master
+
+how GIT knows what code to keep?
+it gives merge conflict
+
+Solution? 
+manually
+
+Ex.
+demo-repo git:(quick-test) git checkout -b quick-test
+
+//modify file
+index.html
+<div>Hello</div> 
+	|
+               V
+    <div> Hello</div>
+    <p>world</p>
+
+ 
+
+demo-repo git:(quick-test) git status
+	//modified index.html
+
+how to check all the changes we made since last commit?
+
+demo-repo git:(quick-test) x git diff
+
+demo-repo git:(quick-test) x git add .
+//or since we have just modified file
+				//am = add and message at same time
+				//note works only for modified files not newly created files
+			//if newly created we have to stage that with git and let git know
+			about it first 
+demo-repo git:(quick-test) x git commit -am "added world"
+
+//Check master branch //nochanges
+demo-repo git:(quick-test) git checkout master
+
+now we try to update same line in master branch
+<div>Hello</div>
+<p>there</p> 	//different line
+Status: 	quick-tst branch has line 2
+	master branch also has line 2
+All ok since bothbranch separate
+
+
+What if both branches were merged?
+how will git decide which line 2 to keep
+
+//we try to change branch
+demo-repo git:(master) x git checkout quick-test
+error: local(master) changes willbe overwritten by checkout branch changes
+//asks you to commit before you change so that line 2 is saved to git in master branch
+				line2 wont be lost
+
+demo-repo git:(master) x git status
+
+demo-repo git:(master) x git commit -am "added there"
+
+//now check quick test branch
+
+//switch from master to quick test now
+demo-repo git:(master) git checkout quick-test
+
+//can see the changes in red and green
+demo-repo git:(quick-test) git diff master
+
+
+
+//merge master into quick test now
+demo-repo git:(quick-test) git merge master
+//Error: CONFLICT
+	Merge conflict in index.html
+	
+
+//What and why we did here?
+what if we are behind the master which is updateds by many people
+so
+as changes are made to master in github repo
+
+Pull changes down to local master branch
+
+and then merge your feature branch (quick test) with master 
+Keeps your branch up to date with what is going on in master
+
+
+//How to fix merge conflicts?
+1)Interfaces like github give you an interface to fix merge conflicts
+2) Terminal
+3) Fix directly in code
+	VS Code has buttons
+		Accept current change | Accept incoming change | Accept both changes| Compare changes
+		code in green and blue lines
+		code separated via =====
+		green code = code on curernt branch
+		blue code = code coming from other branch which we are trying to merge
+		
+		We delete conflict markers
+		what if we save both changes (Manually)				
+
+demo-repo git: (quick-test) x git status
+		//asks to make another conflict
+		because we have fixed merge conflict
+demo-repo git: (quick-test) x git diff
+demo-repo git:(quick-test)  x git commit -am "updated with master"
+//We have updated my quick-test branch with changes happening on master branch		
+	We can continue coding feature bugfix etc on quick-test

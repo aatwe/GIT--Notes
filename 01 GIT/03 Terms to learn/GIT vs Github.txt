@@ -1,0 +1,2 @@
+GIT is tool tracking changes in code over time
+Github is website to host GIT repositories/project folders //helps organize project into portfolio

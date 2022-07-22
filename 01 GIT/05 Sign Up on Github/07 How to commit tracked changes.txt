@@ -1,0 +1,11 @@
+Staging -> Snapshot
+//commit witha  message
+git commit -m "title" -m"Description"
+
+//what should messsage have? the what and why behind commit we are making 
+//when commiting online : we specified title and description
+
+
+//Commit successfully done
+Where are changes commited? locally on GIT 
+	//still not on github

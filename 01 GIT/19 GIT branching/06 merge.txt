@@ -1,0 +1,18 @@
+demo-repo git:(master) git merge feature-readme-instructions
+
+or
+
+push change to github and 
+make a pr //PULLREQUEST
+
+//change to feature branch
+demo-repo git:(master) git checkout feature-readme-instructions
+		        git status //changes are already commited here no change to commit
+		        git push 	//fatal:current branch has no upstream branch
+				/github asks where to push to? name = same as local machine
+		//it suggests  //set upstream is same as -u
+		git push --set-upstream origin feature-readme-instructions
+		git push -u origin feature-readme-instructions
+
+//Feature branch code is pushed up to github
+//gives hint for pull request

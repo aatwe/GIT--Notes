@@ -1,0 +1,9 @@
+1) VS Code
+2) Terminal
+3) Navigate to local folder using cd
+4) Open GIThub Repo -> Clone/download -> clone with SSH -> Copy link : git@github.com.......
+
+		//paste in terminal with command
+4) git clone git@github.com....
+
+The folder from github is in directory now

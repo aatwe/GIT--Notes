@@ -1,0 +1,1 @@
+function: updates current head branch with latest changes from remote

@@ -1,0 +1,22 @@
+Github => fork button in repo
+
+What does fork do? make copy of repository
+why fork? if you have full acceess to your own repo no need to fork it
+
+
+for ex
+vue.js repository on internet
+
+we dont have accesss to change anything on here
+if we want to make PR against repo or request for change to be added
+or just branchoff the code and do whatever i want with it
+
+
+Then click fork button and fork it to user account
+vuejs repo is now under your personal github\
+After forking we have complete control to make any update or changes to code
+we can commit to any file -> commit to dev branch
+	usually there are dev stage master
+
+
+

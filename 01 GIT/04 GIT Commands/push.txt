@@ -1,0 +1,1 @@
+upload GIT commits from GIT(staging area) (snapshot) ->  to a remote repo like Github
